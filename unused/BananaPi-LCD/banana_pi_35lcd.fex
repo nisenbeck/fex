@@ -264,12 +264,12 @@ full_duplex = 0
 manual_cs = 0
 
 [ctp_para]
-ctp_used = 0
+ctp_used = 1
 ctp_name = "ft5x_ts"
 ctp_twi_id = 3
 ctp_twi_addr = 0x38
-ctp_screen_max_x = 1024
-ctp_screen_max_y = 600
+ctp_screen_max_x = 320
+ctp_screen_max_y = 240
 ctp_revert_x_flag = 0
 ctp_revert_y_flag = 0
 ctp_exchange_x_y_flag = 0
@@ -278,8 +278,9 @@ ctp_int_port = port:PH09<6><default><default><default>
 ctp_wakeup = port:PH07<1><default><default><1>
 ctp_io_port = port:PH09<0><default><default><default>
 
+
 [ctp_list_para]
-ctp_det_used = 0
+ctp_det_used = 1
 ft5x_ts = 1
 gt82x = 0
 gslX680 = 0
@@ -477,9 +478,9 @@ lcd_gamma_tbl_0 = 0x0
 lcd_gamma_tbl_1 = 0x10101
 lcd_gamma_tbl_255 = 0xffffff
 lcd_bl_en_used = 1
-lcd_bl_en = port:PH07<1><0><default><1>
+lcd_bl_en = port:PH08<1><0><default><1>
 lcd_power_used = 1
-lcd_power = port:PH08<1><0><default><1>
+lcd_power = port:PH12<1><0><default><1>
 lcd_pwm_used = 1
 lcd_pwm = port:PB02<2><0><default><default>
 lcdd0 = port:PD00<2><0><3><default>
@@ -819,13 +820,13 @@ kp_out7 = port:PH27<4><1><default><default>
 
 [usbc0]
 usb_used = 1
-usb_port_type = 1
-usb_detect_type = 0
+usb_port_type = 2
+usb_detect_type = 1
 usb_id_gpio = port:PH04<0><1><default><default>
 usb_det_vbus_gpio = port:PH05<0><0><default><default>
 usb_drv_vbus_gpio = port:PB09<1><0><default><0>
 usb_restrict_gpio = port:PH00<1><0><default><0>
-usb_host_init_state = 1
+usb_host_init_state = 0
 usb_restric_flag = 0
 usb_restric_voltage = 3550000
 usb_restric_capacity = 5
